@@ -26,9 +26,8 @@
 
     .header {
       padding: 20px;
-      /*background-color: #b81513;*/
-      /*color: white;*/
     }
+
     .title {
       font-size: 1.5em;
     }
@@ -65,26 +64,19 @@
 <body>
   <div class="container">
     <header class="header">
-      <img src="https://s3.amazonaws.com/jets-public/jets/images/jets.png" class="logo" alt="logo" />
-      <h1 class="title">Welcome and congrats!<br /> Jets is running.</h1>
+      <h1 class="title">Translator is running.</h1>
     </header>
     <div class="intro">
       <p>
         To get started:
       </p>
       <div class="code"><pre><code>
-        $ jets generate scaffold post title:string
-        $ jets db:create db:migrate
-        $ jets server
-        $ open http://localhost:8888/posts
-        $ jets help
+        $ GET /words #=> returns random 1000 words from dictionary
+        $ GET /meanings/:word #=> returns meaning of word from dictionary
       </code></pre></div>
-      <p>More on info: <a href="http://rubyonjets.com">rubyonjets.com</a></p>
-      <p>Also check out the <a href="http://rubyonjets.com/reference">Jets CLI reference</a>.</p>
     </div>
     <p class="version">
-      <strong>Jets version:</strong> 2.3.4<br />
-      <strong>Ruby version:</strong> 2.5.3
+      <strong>Ruby version:</strong> 2.6.5
     </p>
   </div>
 </body>
